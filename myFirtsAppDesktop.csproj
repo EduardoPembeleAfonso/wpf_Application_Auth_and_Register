@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>app_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="MaterialDesignThemes" Version="4.8.1-ci255" />
+	  <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0-preview1.23109.1" />
+	  <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="8.0.0-preview.3.23174.2" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0-preview.3.23174.2" />
+	  <PackageReference Include="Syncfusion.Licensing" Version="21.2.4" />
+	  <PackageReference Include="Syncfusion.Pdf.Net.Core" Version="21.2.4" />
+	  <PackageReference Include="Syncfusion.PdfViewer.WPF" Version="21.2.4" />
+	  <!--<PackageReference Include="System.Data.SqlClient" Version="4.8.5" />-->
+	  <!--<PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\logo.png" />
+    <None Remove="Images\man.jpg" />
+    <None Remove="Images\man2.jpg" />
+    <None Remove="Images\man3.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="app_icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\logo.png" />
+    <Resource Include="Images\man.jpg" />
+    <Resource Include="Images\man2.jpg" />
+    <Resource Include="Images\man3.webp" />
+  </ItemGroup>
+
+</Project>
